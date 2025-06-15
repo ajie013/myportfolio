@@ -1,28 +1,34 @@
-import csharp from '@/assets/csharp.svg'
-import express from '@/assets/expressjs.svg'
-import nodejs from '@/assets/nodejs.svg'
-import prisma from '@/assets/prisma.svg'
-import mysql from '@/assets/mysql.svg'
-import sqlserver from '@/assets/sqlserver.svg'
-import mongodb from '@/assets/mongodb.svg'
+import csharp from '@/assets/skills-photos/csharp.svg'
+import express from '@/assets/skills-photos/expressjs.svg'
+import nodejs from '@/assets/skills-photos/nodejs.svg'
+import prisma from '@/assets/skills-photos/prisma.svg'
+import mysql from '@/assets/skills-photos/mysql.svg'
+import sqlserver from '@/assets/skills-photos/sqlserver.svg'
+import mongodb from '@/assets/skills-photos/mongodb.svg'
 
-import reactjs from '@/assets/react.svg'
-import reactnative from '@/assets/react.svg'
-import next from '@/assets/nextjs.svg'
-import tailwind from '@/assets/tailwindcss.svg'
-import bootstrap from '@/assets/bootstrap.svg'
-import html from '@/assets/html.svg'
-import css from '@/assets/css.svg'
-import javascript from '@/assets/javascript.svg'
-import typescript from '@/assets/typescript.svg'
+import reactjs from '@/assets/skills-photos/react.svg'
+import reactnative from '@/assets/skills-photos/react.svg'
+import next from '@/assets/skills-photos/nextjs.svg'
+import tailwind from '@/assets/skills-photos/tailwindcss.svg'
+import bootstrap from '@/assets/skills-photos/bootstrap.svg'
+import html from '@/assets/skills-photos/html.svg'
+import css from '@/assets/skills-photos/css.svg'
+import javascript from '@/assets/skills-photos/javascript.svg'
+import typescript from '@/assets/skills-photos/typescript.svg'
 
-import git from '@/assets/git.svg'
-import github from '@/assets/github.svg'
-import postman from '@/assets/postman.svg'
-import photoshop from '@/assets/photoshop.svg'
-import figma from '@/assets/figma.svg'
-import vscode from '@/assets/vscode.svg'
-import visualstudio from '@/assets/vs.svg'
+import git from '@/assets/skills-photos/git.svg'
+import github from '@/assets/skills-photos/github.svg'
+import postman from '@/assets/skills-photos/postman.svg'
+import photoshop from '@/assets/skills-photos/photoshop.svg'
+import figma from '@/assets/skills-photos/figma.svg'
+import vscode from '@/assets/skills-photos/vscode.svg'
+import visualstudio from '@/assets/skills-photos/vs.svg'
+
+import possytem from '@/assets/project-photos/possystem.png'
+import chathhub from '@/assets/project-photos/chathub.png'
+import furnira from '@/assets/project-photos/furniracommerce.png'
+import stripe from '@/assets/project-photos/stripe.svg'
+import socketio from '@/assets/project-photos/socketio.svg'
 
 export const imagesData ={
 
@@ -50,3 +56,11 @@ export const imagesData ={
     visualstudio,
     reactnative
 };
+
+export const projectsImageData = {
+    chathhub,
+    possytem,
+    furnira,
+    stripe, 
+    socketio
+}
