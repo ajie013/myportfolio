@@ -6,9 +6,14 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Linkedin, Download } from "lucide-react";
 import { motion } from "framer-motion";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function HomePage() {
-
     return (
         <main className="px-4 md:px-6 max-w-4xl mx-auto flex flex-col items-center text-center text-primary-text pt-10 md:pt-16">
             {/* Profile Image */}
@@ -31,7 +36,6 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-              
                 className="text-3xl md:text-4xl font-bold mb-4"
             >
                 Hi! I’m Aljon 👋
@@ -43,47 +47,63 @@ export default function HomePage() {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="text-base md:text-lg leading-relaxed max-w-2xl mb-6"
             >
-                I’m a passionate <span className="font-semibold text-secondary-text">Full-Stack Web Developer</span> who enjoys building clean, efficient, and user-friendly web applications.
+                I’m a passionate{" "}
+                <span className="font-semibold text-secondary-text">
+                    Full-Stack Web Developer
+                </span>{" "}
+                who enjoys building clean, efficient, and user-friendly web applications.
             </motion.p>
 
-           
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.6 }}
-                className="flex text-sm md:text-lg gap-3"
-            >
-                <Button
-                    asChild
-                    className="bg-primary hover:bg-primary/90 text-primary-text flex items-center gap-2 px-5 py-2"
+            <TooltipProvider>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.6 }}
+                    className="flex text-sm md:text-lg gap-3"
                 >
-                    <Link
-                        href="https://www.linkedin.com/in/aljon-gemida"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Linkedin size={18} />
-                        LinkedIn
-                    </Link>
-                </Button>
+                    <Tooltip  >
+                        <TooltipTrigger asChild>
+                            <Button
+                                asChild
+                                className="bg-primary hover:bg-primary/90 text-primary-text flex items-center gap-2 px-5 py-2"
+                            >
+                                <Link
+                                    href="https://www.linkedin.com/in/aljon-gemida"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Linkedin size={18} />
+                                    LinkedIn
+                                </Link>
+                            </Button>
+                        </TooltipTrigger>
+                        <TooltipContent side="bottom">
+                            <p className="">Visit my LinkedIn profile</p>
+                        </TooltipContent>
+                    </Tooltip>
 
-                <Button
-                    asChild
-              
-                    
-                    className="bg-primary hover:bg-primary/90 text-primary-text flex items-center gap-2 px-5 py-2"
-                >
-                    <Link
-                        href="/resume.pdf"
-                        download="Aljon-Gemida-Resume.pdf"
-                        rel="noopener noreferrer"
-                       
-                    >
-                        <Download size={18}  />
-                        Resume
-                    </Link>
-                </Button>
-            </motion.div>
+                    <Tooltip>
+                        <TooltipTrigger asChild>
+                            <Button
+                                asChild
+                                className="bg-primary hover:bg-primary/90 text-primary-text flex items-center gap-2 px-5 py-2"
+                            >
+                                <Link
+                                    href="/resume.pdf"
+                                    download="Aljon-Gemida-Resume.pdf"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Download size={18} />
+                                    Resume
+                                </Link>
+                            </Button>
+                        </TooltipTrigger>
+                        <TooltipContent side="bottom">
+                            <p>Download my resume</p>
+                        </TooltipContent>
+                    </Tooltip>
+                </motion.div>
+            </TooltipProvider>
         </main>
     );
 }
