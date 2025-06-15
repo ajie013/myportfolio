@@ -67,14 +67,17 @@ export default function Home() {
 
                 <Button
                     asChild
+              
+                    
                     className="bg-primary hover:bg-primary/90 text-primary-text flex items-center gap-2 px-5 py-2"
                 >
                     <Link
                         href="/resume.pdf"
                         download="Aljon-Gemida-Resume.pdf"
                         rel="noopener noreferrer"
+                       
                     >
-                        <Download size={18} />
+                        <Download size={18}  />
                         Resume
                     </Link>
                 </Button>

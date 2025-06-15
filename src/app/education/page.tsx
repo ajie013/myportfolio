@@ -42,8 +42,7 @@ export default function EducationPage() {
                 Education
             </h1>
 
-            {/* Central Vertical Line for md+ */}
-            <div className="hidden md:block absolute left-1/2 top-32 bottom-0 w-px bg-muted -translate-x-1/2 z-0" />
+         
 
             <div className="space-y-15 md:space-y-20 relative z-10">
                 {education.map((edu, index) => (
@@ -85,7 +84,6 @@ export default function EducationPage() {
                             </div>
                         </motion.div>
 
-                        {/* Icon in center timeline (absolute for md+, static for mobile) */}
                         <motion.div
                             initial={{ opacity: 0, y: -20, scale: 0.8 }}
                             whileInView={{ opacity: 1, y: 0, scale: 1 }}
