@@ -119,7 +119,7 @@ function ProjectCard({
             variants={variants}
             whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className="group relative overflow-hidden rounded-2x1 bg-foreground shadow-md hover:shadow-xl transition-shadow"
+            className="group relative overflow-hidden rounded-2x1 bg-foreground  shadow-lg transition-shadow hover:shadow-lg hover:shadow-primary "
         >
             <div className="relative h-48 w-full overflow-hidden">
                 <Image
@@ -138,7 +138,7 @@ function ProjectCard({
                     {project.techs.map((tech) => (
                         <div
                             key={tech.name}
-                            className="flex items-center gap-2 bg-muted/30 px-3 py-1.5 rounded-md text-sm text-secondary-text shadow-sm"
+                            className="flex items-center gap-2 border border-[#00c89666]  bg-muted/30 px-3 py-1.5 rounded-md text-sm text-secondary-text shadow-lg"
                         >
                             <Image
                                 src={tech.image || ''}

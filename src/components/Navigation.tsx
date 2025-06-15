@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { redirect } from "next/navigation";
 
 export default function Navigation() {
     const path = usePathname();
@@ -16,6 +17,10 @@ export default function Navigation() {
         { path: "/skills", title: "Skills" },
         { path: "/projects", title: "Projects" },
     ];
+
+    const goToHome = () =>{
+        redirect('/')
+    };
 
     const linkClasses = (href: string) =>
         `block px-4 py-2 tracking-wide transition-colors duration-300
@@ -30,10 +35,11 @@ export default function Navigation() {
             <nav className="mx-auto flex h-full max-w-6xl items-center justify-between px-4">
              
                 <motion.h1
-                    className="text-xl font-bold text-secondary-text"
+                    className="text-xl font-bold text-secondary-text cursor-pointer"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
+                    onClick={goToHome}
                 >
                     Aljon Gemida
                 </motion.h1>
