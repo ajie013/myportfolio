@@ -1,9 +1,11 @@
+import ProjectPage from "./ProjectPage";
+
+export const metadata = {
+  title: "Projects",
+  description: "Browse a collection of projects developed by Aljon Gemida, demonstrating expertise in full-stack development, UI/UX design, and modern web technologies.",
+};
 
 
 export default function Projects() {
-    return (
-        <div className="w-full min-h-screen flex justify-center items-center">
-            <h1 className="text-6xl font-extrabold tracking-widest">Coming Soon</h1>
-        </div>
-    );
+    return <ProjectPage/>
 }
