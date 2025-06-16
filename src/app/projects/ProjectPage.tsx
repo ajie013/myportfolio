@@ -44,6 +44,18 @@ export default function ProjectsPage() {
             ],
         },
         {
+            title: 'Point-of-Sale System',
+            image: projectsImageData.possytem,
+            techs: [
+                { name: 'React.js', image: imagesData.reactjs },
+                { name: 'Node.js', image: imagesData.nodejs },
+                { name: 'Express.js', image: imagesData.express },
+                { name: 'MySQL', image: imagesData.mysql },
+            ],
+        },
+
+    
+        {
             title: 'My Portfolio',
             image: projectsImageData.myportfolio,
             techs: [
@@ -54,7 +66,6 @@ export default function ProjectsPage() {
             ],
         },
 
-        
     ];
 
     const sectionVariant: Variants = {
