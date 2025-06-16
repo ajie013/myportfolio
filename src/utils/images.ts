@@ -29,6 +29,7 @@ import chathhub from '@/assets/project-photos/chathub.png'
 import furnira from '@/assets/project-photos/furniracommerce.png'
 import stripe from '@/assets/project-photos/stripe.svg'
 import socketio from '@/assets/project-photos/socketio.svg'
+import myportfolio from '@/assets/project-photos/portfolio.png'
 
 export const imagesData ={
 
@@ -62,5 +63,6 @@ export const projectsImageData = {
     possytem,
     furnira,
     stripe, 
-    socketio
+    socketio,
+    myportfolio
 }
