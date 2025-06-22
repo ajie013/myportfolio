@@ -67,6 +67,17 @@ export default function ProjectsPage() {
             ],
         },
 
+         {
+            title: 'Resume builder',
+            image: projectsImageData.resumebuilder,
+            techs: [
+                { name: 'React.js', image: imagesData.reactjs },
+                { name: 'Next.js', image: imagesData.next },
+                { name: 'TypeScript', image: imagesData.typescript },
+                { name: 'Tailwind CSS', image: imagesData.tailwind },
+            ],
+        },
+
     ];
 
     const sectionVariant: Variants = {

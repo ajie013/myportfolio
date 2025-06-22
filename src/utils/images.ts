@@ -30,6 +30,7 @@ import furnira from '@/assets/project-photos/furniracommerce.png'
 import stripe from '@/assets/project-photos/stripe.svg'
 import socketio from '@/assets/project-photos/socketio.svg'
 import myportfolio from '@/assets/project-photos/portfolio.png'
+import resumebuilder from '@/assets/project-photos/resumebuilder.png'
 
 export const imagesData ={
 
@@ -64,5 +65,6 @@ export const projectsImageData = {
     furnira,
     stripe, 
     socketio,
-    myportfolio
+    myportfolio,
+    resumebuilder
 }
