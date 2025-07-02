@@ -14,7 +14,7 @@ export default function SkillsPage() {
         { name: "Node.js", icon: imagesData.nodejs },
         { name: "Express.js", icon: imagesData.express },
         { name: "Prisma", icon: imagesData.prisma },
-        { name: "C#", icon: imagesData.csharp }
+        { name: "C# (ASP.NET Core)", icon: imagesData.csharp }
     ];
 
     const databaseSkills: Skill[] = [
@@ -35,6 +35,13 @@ export default function SkillsPage() {
         { name: "Bootstrap", icon: imagesData.bootstrap }
     ];
 
+    const programmingLanguages: Skill[] = [
+        { name: "C#", icon: imagesData.csharp},
+        { name: "JavaScript", icon: imagesData.javascript},
+        { name: "TypeScript", icon: imagesData.typescript},
+        { name: "Java", icon: imagesData.java},
+        
+    ]
     const toolsAndTechnologies: Skill[] = [
         { name: "Git", icon: imagesData.git },
         { name: "GitHub", icon: imagesData.github },
@@ -80,6 +87,7 @@ export default function SkillsPage() {
             {renderSkills("Frontend", frontendSkills, sectionVariant, containerVariant)}
             {renderSkills("Backend", backendSkills, sectionVariant, containerVariant)}
             {renderSkills("Databases", databaseSkills, sectionVariant, containerVariant)}
+            {renderSkills("Programming Languages", programmingLanguages, sectionVariant, containerVariant)}
             {renderSkills("Tools & Technologies", toolsAndTechnologies, sectionVariant, containerVariant)}
         </main>
     );

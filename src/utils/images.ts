@@ -32,6 +32,8 @@ import socketio from '@/assets/project-photos/socketio.svg'
 import myportfolio from '@/assets/project-photos/portfolio.png'
 import resumebuilder from '@/assets/project-photos/resumebuilder.png'
 
+import java from '@/assets/skills-photos/java.svg'
+
 export const imagesData ={
 
     csharp,
@@ -56,7 +58,8 @@ export const imagesData ={
     figma,
     vscode,
     visualstudio,
-    reactnative
+    reactnative,
+    java
 };
 
 export const projectsImageData = {
